@@ -15,7 +15,7 @@ module Hawkular
       hash[:options] ||= {}
       @state = hash
 
-      @inventory = Inventory::InventoryClient.create(entrypoint: "#{hash[:entrypoint]}/hawkular/inventory",
+      @inventory = Inventory::InventoryClient.create(entrypoint: "#{hash[:entrypoint]}/hawkular/inventory/deprecated",
                                                      credentials: hash[:credentials],
                                                      options: hash[:options])
 
